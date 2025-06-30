@@ -39,7 +39,7 @@ echo -e "${AZUL}🛠️ Criando área de swap no ZRAM...${RESET}"
 sudo mkswap /dev/zram0 >/dev/null
 
 echo -e "${AZUL}🚀 Ativando swap ZRAM com prioridade alta...${RESET}"
-sudo swapon -p 100 /dev/zram0
+sudo swapon -p 5 /dev/zram0
 
 echo ""
 echo -e "${VERDE}✅ ZRAM configurado com sucesso!${RESET}"
